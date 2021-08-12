@@ -8,7 +8,7 @@ h1 {
 }
 
 h2 {
-    color: #219EBC;
+    color: black;
     font-family: 'Sarabun', sans-serif;
 }
 
@@ -19,4 +19,12 @@ footer {
 hr {
     color: black;
     flex-direction: column;
+}
+
+.navDefault {
+    background-color: #8ecae6;
+}
+
+.navSelected {
+    background-color: #219ebc;
 }
