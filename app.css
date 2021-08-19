@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  margin: 0 6.3%;
+  margin: 0 7%;
 }
 
 blockquote, q {
@@ -44,75 +44,63 @@ input, button {
 
 body {
   background-color: white;
-  margin: 20px;
-}
-
-h1 {
-  color: #023047;
-  font-family: 'Sarabun', sans-serif;
-  font-size: 200%;
-  margin-top: 20px;
-}
-
-.fullName {
-  font-size: 300%;
-}
-
-h2 {
-  color: black;
-  font-family: 'Sarabun', sans-serif;
-}
-
-.article {
-  color: black;
-  font-family: 'Sarabun', sans-serif;
-  font-size: 16px;
-  padding: 20px;
-}
-
-footer {
-  font-family: 'Sarabun', sans-serif;
-}
-
-hr {
-  color: black;
-  flex-direction: column;
-}
-
-nav {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-  margin: 0px;
-  padding: 10px;
-  max-width: 1220px;
-}
-
-.navDefault {
-  background-color: #8ecae6;
-  display: inline-block;
-  font-size: 18px;
-  height: 50px;
-  flex-direction: row;
-  margin: 0;
-  padding: 0px 40px;
-  line-height: 44px;
-  width: 110px;
-  text-align: center;
-}
-
-.navSelected {
-  background-color: #219ebc;
-}
-
-.paulSection {
-  text-align: center;
-  max-width: 1220px;
-}
-
-.paul {
-  max-width: 300px;
-  border-radius: 100%;
-  margin: 30px 0px;
-  border: 10px solid #8ecae6;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-  vertical-align: middle;
-}
+  h1 {
+    color: #023047;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  .fullName {
+    font-size: 300%;
+    font-family: 'Satisfy', sans-serif;
+  }
+  h2 {
+    color: black;
+    font-family: 'Sarabun', sans-serif;
+  }
+  .article {
+    color: black;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+  }
+  footer {
+    font-family: 'Sarabun', sans-serif;
+  }
+  hr {
+    color: black;
+    flex-direction: column;
+  }
+  nav {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    margin: 0px;
+    padding: 10px;
+    max-width: 1220px;
+  }
+  .navDefault {
+    background-color: #8ecae6;
+    display: inline-block;
+    font-size: 18px;
+    height: 50px;
+    flex-direction: row;
+    margin: 0;
+    padding: 0px 40px;
+    line-height: 44px;
+    width: 110px;
+    text-align: center;
+  }
+  .navSelected {
+    background-color: #219ebc;
+  }
+  .paulSection {
+    text-align: center;
+    max-width: 1220px;
+  }
+  .paul {
+    max-width: 300px;
+    border-radius: 100%;
+    margin: 30px 0px;
+    border: 10px solid #8ecae6;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    vertical-align: middle;
+  }
