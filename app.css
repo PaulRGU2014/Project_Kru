@@ -49,12 +49,12 @@ body {
 h1 {
   color: #023047;
   font-family: 'Sarabun', sans-serif;
-  font-size: 32px;
+  font-size: 200%;
   margin-top: 20px;
 }
 
 .fullName {
-  font-size: 68px;
+  font-size: 300%;
 }
 
 h2 {
