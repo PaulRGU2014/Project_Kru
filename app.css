@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  margin: 0 7%;
+  margin: 0 5%;
 }
 
 blockquote, q {
@@ -45,11 +45,11 @@ input, button {
 body {
   background-color: white;
   max-width: 1440px;
+  font-family: 'Sarabun', sans-serif;
 }
 
 h1 {
   color: #023047;
-  font-family: 'Sarabun', sans-serif;
   font-size: 200%;
   margin-top: 20px;
 }
@@ -62,18 +62,12 @@ h1 {
 
 h2 {
   color: black;
-  font-family: 'Sarabun', sans-serif;
 }
 
 .article {
   color: black;
-  font-family: 'Sarabun', sans-serif;
-  font-size: 16px;
+  font-size: 150%;
   padding: 20px;
-}
-
-footer {
-  font-family: 'Sarabun', sans-serif;
 }
 
 hr {
@@ -85,6 +79,7 @@ nav {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
   margin: 0px;
   padding: 10px;
+  min-width: 190px;
 }
 
 .navDefault {
@@ -93,11 +88,17 @@ nav {
   font-size: 18px;
   height: 50px;
   flex-direction: row;
-  margin: 0;
-  padding: 0px 40px;
-  line-height: 44px;
+  margin: 1%;
+  padding: 3%;
+  line-height: 6em;
   width: 110px;
+  height: 110px;
   text-align: center;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.navDefault:hover {
+  background-color: rgba(142, 202, 230, 0.5);
 }
 
 .navSelected {
