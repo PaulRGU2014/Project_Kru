@@ -51,7 +51,7 @@ body {
 h1 {
   color: #023047;
   font-size: 200%;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .fullName {
@@ -61,7 +61,11 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: black;;
+}
+
+h3{
+  font-size: 150%;
 }
 
 .article {
@@ -80,13 +84,14 @@ nav {
   margin: 0px;
   padding: 10px;
   min-width: 190px;
+  display: block;
+  text-align: center;
 }
 
 .navDefault {
   background-color: #8ecae6;
   display: inline-block;
   font-size: 18px;
-  height: 50px;
   flex-direction: row;
   margin: 1%;
   padding: 3%;
@@ -95,6 +100,7 @@ nav {
   height: 110px;
   text-align: center;
   transition: background-color 0.25s ease-in-out;
+  border: 5px solid black;
 }
 
 .navDefault:hover {
