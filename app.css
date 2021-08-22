@@ -88,6 +88,11 @@ nav {
   text-align: center;
 }
 
+.languages {
+  display: block;
+  text-align: end;
+}
+
 .navDefault {
   background-color: #8ecae6;
   display: inline-block;
