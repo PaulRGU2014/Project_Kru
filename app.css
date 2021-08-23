@@ -19,7 +19,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  margin: 0 5%;
+  margin: 2% 5%;
 }
 
 blockquote, q {
@@ -44,7 +44,6 @@ input, button {
 
 body {
   background-color: white;
-  max-width: 1440px;
   font-family: 'Sarabun', sans-serif;
 }
 
@@ -57,26 +56,32 @@ h1 {
 .fullName {
   font-size: 300%;
   font-family: 'Satisfy', sans-serif;
-  text-align: center;
 }
 
 h2 {
-  color: black;;
-}
-
-h3{
-  font-size: 150%;
-}
-
-.article {
   color: black;
+  ;
+}
+
+h3 {
   font-size: 150%;
-  padding: 20px;
+}
+
+article {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  margin: 20px 0 40px 0;
+  min-width: 190px;
+  display: block;
+  font-size: 150%;
+  text-align: justify;
+  padding: 7%;
+  color: black;
 }
 
 hr {
   color: black;
   flex-direction: column;
+  border: 2px solid black;
 }
 
 nav {
@@ -93,10 +98,19 @@ nav {
   text-align: end;
 }
 
+.nameTitle {
+  max-width: 500px;
+  margin: 60px 0 0 80px;
+}
+
+.nameTop {
+  display: inline-flex;
+}
+
 .navDefault {
   background-color: #8ecae6;
   display: inline-block;
-  font-size: 18px;
+  font-size: 120%;
   flex-direction: row;
   margin: 1%;
   padding: 3%;
@@ -121,11 +135,13 @@ nav {
 }
 
 .paul {
-  max-width: 250px;
-  width: 80%;
-  border-radius: 100%;
+  width: 400px;
   margin: 30px 0px;
-  border: 10px solid #8ecae6;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
   vertical-align: middle;
+}
+
+.topic {
+  color: #023047;
+  font-size: 200%;
+  margin: 0 0 1%;
 }
