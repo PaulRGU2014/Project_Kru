@@ -155,7 +155,7 @@ nav {
   width: 400px;
   margin: 30px 0px;
   vertical-align: middle;
-
+  z-index: -1;
 }
 
 .topic {
