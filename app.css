@@ -54,11 +54,6 @@ h1 {
   margin-top: 50px;
 }
 
-li {
-  font-size: 400%;
-  list-style: none;
-}
-
 h2 {
   color: black;
   ;
@@ -91,7 +86,7 @@ hr {
 
 nav {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-  margin: 0;
+  margin: -4px 0px 0px 0px;
   padding: 10px;
   min-width: 190px;
   display: block;
@@ -99,8 +94,13 @@ nav {
   z-index: 2;
 }
 
+.careerTitle {
+  font-size: 3vw;
+  list-style: none;
+}
+
 .fullName {
-  font-size: 700%;
+  font-size: 5vw;
   font-family: 'Neucha', cursive;
   font-weight: bolder;
 }
@@ -118,7 +118,7 @@ nav {
 
 .nameTitle {
   max-width: 1200px;
-  margin: 60px 0 0 80px;
+  margin: 0vw 0 7vw 6vw;
 }
 
 .nameTop {
@@ -126,7 +126,7 @@ nav {
   z-index: 0;
   font-family: 'Neucha', cursive;
   text-align: center;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
 .navDefault {
@@ -144,6 +144,10 @@ nav {
   transition: filter 0.25s ease-in-out;
 }
 
+div.navDefault {
+  display: none;
+}
+
 .navDefault:hover {
   filter: none;
 }
@@ -157,8 +161,8 @@ nav {
 }
 
 .paul {
-  width: 400px;
-  margin: 0px 30px 0px -30px;
+  height: 25vw;
+  margin: 0px -30px 0px 0px;
   vertical-align: middle;
   z-index: -1;
 }
@@ -168,3 +172,49 @@ nav {
   font-size: 200%;
   margin: 0 0 1%;
 }
+
+@media (max-width: 606px) {
+  .careerTitle {
+    font-size: 3vw;
+    list-style: none;
+  }
+  .fullName {
+    font-size: 5vw;
+    font-family: 'Neucha', cursive;
+    font-weight: bolder;
+  }
+  .paul {
+    height: 40vw;
+    margin: 0;
+    vertical-align: middle;
+    z-index: -1;
+  }
+  .nameTitle {
+    max-width: 1200px;
+    margin: 0px;
+  }
+  .nameTop {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    z-index: 0;
+    font-family: 'Neucha', cursive;
+    text-align: center;
+    align-items: center;
+  }
+  img.navDefault {
+    display: none;
+  }
+  div.navDefault {
+    background-color: #8ecae6;
+    display: inline-block;
+    font-size: 120%;
+    flex-direction: row;
+    margin: 1%;
+    padding: 3%;
+    line-height: 6em;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    filter: grayscale(100%);
+    transition: filter 0.25s ease-in-out;
+  }
