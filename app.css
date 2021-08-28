@@ -234,6 +234,10 @@ nav {
   img.navDefault {
     display: none;
   }
+
+  img.navSelected {
+    display: none;
+  }
   div.navDefault {
     background-color: #8ecae6;
     display: inline-block;
