@@ -66,7 +66,7 @@ h3 {
 article {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
   margin: 20px 0 40px 0;
-  min-width: 190px;
+  min-width: 270px;
   display: block;
   font-size: 150%;
   text-align: justify;
@@ -88,10 +88,14 @@ nav {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
   margin: -4px 0px 0px 0px;
   padding: 10px;
-  min-width: 190px;
+  min-width: 270px;
   display: block;
   text-align: center;
   z-index: 2;
+}
+
+.navDefaultText{
+  display: none;
 }
 
 .careerTitle {
@@ -132,7 +136,7 @@ nav {
 .navDefault {
   /* background-color: #8ecae6; */
   display: inline-block;
-  font-size: 120%;
+  /* font-size: 120%; */
   flex-direction: row;
   margin: 1%;
   /* padding: 3%; */
@@ -144,9 +148,6 @@ nav {
   transition: filter 0.25s ease-in-out;
 }
 
-div.navDefault {
-  display: none;
-}
 
 .navDefault:hover {
   filter: none;
@@ -175,16 +176,16 @@ div.navDefault {
 
 @media (max-width: 606px) {
   .careerTitle {
-    font-size: 3vw;
+    font-size: 5vw;
     list-style: none;
   }
   .fullName {
-    font-size: 5vw;
+    font-size: 7vw;
     font-family: 'Neucha', cursive;
     font-weight: bolder;
   }
   .paul {
-    height: 40vw;
+    height: 72vw;
     margin: 0;
     vertical-align: middle;
     z-index: -1;
@@ -207,14 +208,22 @@ div.navDefault {
   div.navDefault {
     background-color: #8ecae6;
     display: inline-block;
-    font-size: 120%;
     flex-direction: row;
-    margin: 1%;
+    margin: 2% 1%;
     padding: 3%;
-    line-height: 6em;
-    width: 250px;
+    width: -webkit-fill-available;
     height: 50px;
     text-align: center;
     filter: grayscale(100%);
     transition: filter 0.25s ease-in-out;
   }
+
+.navDefaultText{
+    display: block;
+    font-size: 120%;
+    text-align: center;
+    line-height: 6vh;
+    width: -webkit-fill-available;
+    height:50px;
+
+}
