@@ -192,6 +192,11 @@ nav {
   /* animation-name: wipe-enter ; */
 }
 
+.projectPanel-transition {
+  opacity: 1;
+  transform: none;
+}
+
 .topic {
   color: #023047;
   font-size: 200%;
@@ -256,13 +261,8 @@ nav {
 @media (prefers-reduced-motion: no-preference) {
   .projectPanel {
     transition: opacity 1.5s ease, transform 1.5s ease;
-  }
-}
+  }}
 
-.projectPanel-transition {
-    opacity: 1;
-    transform: none;
-}
 
 /* @keyframes wipe-enter {
 	0% {
