@@ -149,6 +149,10 @@ nav {
   filter: none;
 }
 
+.navSelected:hover {
+  filter: none;
+}
+
 .navSelected {
   display: inline-block;
   flex-direction: row;
@@ -238,6 +242,19 @@ nav {
   img.navSelected {
     display: none;
   }
+  div.navDefault {
+    background-color: #8ecae6;
+    display: inline-block;
+    flex-direction: row;
+    margin: 2% 1%;
+    padding: 3%;
+    width: -webkit-fill-available;
+    height: 50px;
+    text-align: center;
+    filter: grayscale(100%);
+    transition: filter 0.25s ease-in-out;
+  }
+
   div.navDefault {
     background-color: #8ecae6;
     display: inline-block;
