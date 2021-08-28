@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    
 
     <title>Kru Paul - Official Webpage</title>
 </head>
@@ -41,33 +42,33 @@
     <!-- <section class="paulSection"> -->
 
     <nav>
-        <div class="navDefault">
-            <img src="pics/menus/AboutMe.jpg" alt="About Me" class="navDefault">
+        <div class="navSelected" data-tab="AboutMe">
+            <img src="pics/menus/AboutMe.jpg" alt="About Me" class="navSelected">
             <h3 class="navDefaultText">About Me</h3>
         </div>
-        <div class="navDefault">
+        <div class="navDefault" data-tab="Experiences">
             <img src="pics/menus/Experiences.jpg" alt="Experiences" class="navDefault">
             <h3 class="navDefaultText">Experiences</h3>
         </div>
-        <div class="navDefault">
+        <div class="navDefault" data-tab="Skills">
             <img src="pics/menus/Skills.jpg" alt="Skills" class="navDefault">
             <h3 class="navDefaultText">Skills</h3>
         </div>
-        <div class="navDefault">
+        <div class="navDefault" data-tab="Projects">
             <img src="pics/menus/Projects.jpg" alt="Projects" class="navDefault">
             <h3 class="navDefaultText">Projects</h3>
         </div>
-        <div class="navDefault">
+        <div class="navDefault" data-tab="Education">
             <img src="pics/menus/Edu.jpg" alt="Education" class="navDefault">
             <h3 class="navDefaultText">Education</h3>
         </div>
-        <div class="navDefault">
+        <div class="navDefault" data-tab="Contact">
             <img src="pics/menus/Contact.jpg" alt="Contact" class="navDefault">
             <h3 class="navDefaultText">Contact</h3>
         </div>
     </nav>
     <!-- </section> -->
-    <article class="aboutMe">
+    <article data-tab="AboutMe">
 
         <h1 class="topic">About Me</h1>
         <p>Hi, my name is Paul Thanataweenont. I am originally from Phuket, Thailand. I currently live in Denver,
@@ -86,7 +87,7 @@
         </p>
     </article>
     
-    <article class="experiences">
+    <article data-tab="Experiences">
 
         <h1 class="topic">Experiences</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolor asperiores dolore quidem perferendis, repellendus esse quisquam vel facilis quae quasi, blanditiis animi delectus nisi nostrum hic minus, reiciendis maxime.
@@ -98,7 +99,7 @@
         </p>
     </article>
 
-    <article class="skills">
+    <article data-tab="Skills">
 
         <h1 class="topic">Skills</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolor asperiores dolore quidem perferendis, repellendus esse quisquam vel facilis quae quasi, blanditiis animi delectus nisi nostrum hic minus, reiciendis maxime.
@@ -111,21 +112,41 @@
     </article>
 
 
-    <article class="projects">
+    <article data-tab="Projects">
 
         <h1 class="topic">Projects</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolor asperiores dolore quidem perferendis, repellendus esse quisquam vel facilis quae quasi, blanditiis animi delectus nisi nostrum hic minus, reiciendis maxime.
-        Velit iusto quae dicta alias laboriosam similique esse vel iure architecto numquam incidunt, minus odit molestias dolor debitis magni sequi eveniet pariatur non tenetur facere ea illo a ut. Ipsam!
-        Dolor voluptates praesentium omnis! Molestias eligendi dicta reprehenderit quae id quidem asperiores corporis nobis reiciendis, quod sequi obcaecati quo ullam soluta? Ducimus itaque magni voluptatem dolore commodi delectus nisi saepe.
-        Corporis, id voluptates eveniet dolor accusamus, nobis doloremque dolore sed nam voluptas exercitationem repellendus, neque ratione iste mollitia dicta laboriosam atque eum magni et aperiam eos rerum. Ratione, et commodi?
-        Tempora provident eum iure, nihil voluptate suscipit modi assumenda harum dolorum magnam error dicta incidunt voluptatum adipisci quos? Corporis eveniet minima amet nesciunt ullam, ut laborum porro sed modi nulla.
-        Quam non soluta, sequi, accusantium nostrum voluptas, facilis velit nam minus voluptatum atque debitis voluptate vitae eum inventore! Ea odit itaque natus laudantium quas! Autem id enim molestiae dolorum aliquam?
-        </p>
+<div class="paulSection">
+    <div class="projectPanel-wrapper">
+        <div class="projectPanel projectPanel-transition">Training Project Tabs and Data
+            web development project URL
+        </div>        
+    </div>
+
+      <div class="projectPanel-wrapper">
+        <div class="projectPanel projectPanel-transition">Training Project Web Database
+            database development project URL
+        </div>
+      </div>
+
+      <div class="projectPanel-wrapper">
+        <div class="projectPanel projectPanel-transition">Udemy Coursework Yelpcamp 
+            Project URL
+        </div>
+      </div>
+
+      <div class="projectPanel-wrapper">
+        <div class="projectPanel projectPanel-transition">Masters degree dissertation 
+            SAGD Technique for Heavy Oil Extraction
+        </div>
+      </div>
+</div>
+
     </article>    
 
-    <article class="education">
+    <article data-tab="Education>
 
         <h1 class="topic">Education</h1>
+        
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolor asperiores dolore quidem perferendis, repellendus esse quisquam vel facilis quae quasi, blanditiis animi delectus nisi nostrum hic minus, reiciendis maxime.
         Velit iusto quae dicta alias laboriosam similique esse vel iure architecto numquam incidunt, minus odit molestias dolor debitis magni sequi eveniet pariatur non tenetur facere ea illo a ut. Ipsam!
         Dolor voluptates praesentium omnis! Molestias eligendi dicta reprehenderit quae id quidem asperiores corporis nobis reiciendis, quod sequi obcaecati quo ullam soluta? Ducimus itaque magni voluptatem dolore commodi delectus nisi saepe.
@@ -135,7 +156,7 @@
         </p>
     </article> 
     
-    <article class="contact">
+    <article data-tab="Contact">
 
         <h1 class="topic">Contact</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolor asperiores dolore quidem perferendis, repellendus esse quisquam vel facilis quae quasi, blanditiis animi delectus nisi nostrum hic minus, reiciendis maxime.
@@ -154,6 +175,8 @@
                 alt=""></a>
         <a href="https://www.youtube.com/c/PaulsChemistryThailand"><img class="logo" src="pics/logo/YT.png" alt=""></a>
     </footer>
+
+    <script src="app.js"></script>
 
 </body>
 
