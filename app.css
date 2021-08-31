@@ -94,6 +94,7 @@ nav {
   z-index: 2;
 }
 
+
 .navDefaultText{
   display: none;
 }
@@ -181,20 +182,20 @@ nav {
 
 
 .projectPanel{
-  background-color:#219ebc;
+  background-color: #D8F3DC;;
   display: flex;
-  width: 400px;
+  width: 500px;
   height: 200px;
-  padding: 2%;
-  margin: 5%;
+  padding: 4%;
+  margin: 5% 0;
   text-align: center;
   align-items: center;
-  border-radius: 30px;
-  border: 3px solid black;
+  border: none;
   opacity: 0;
   transform: scale(1.2);
   /* animation-name: wipe-enter ; */
 }
+
 
 .projectPanel-transition {
   opacity: 1;
@@ -243,7 +244,7 @@ nav {
     display: none;
   }
   div.navDefault {
-    background-color: #8ecae6;
+    background-color: #D8F3DC;
     display: inline-block;
     flex-direction: row;
     margin: 2% 1%;
@@ -283,14 +284,3 @@ nav {
   .projectPanel {
     transition: opacity 1.5s ease, transform 1.5s ease;
   }}
-
-
-/* @keyframes wipe-enter {
-	0% {
-		transform: scale(0, .025);
-	}
-	50% {
-		transform: scale(1, .025);
-	}
-} */
-
