@@ -90,19 +90,22 @@ hr {
 }
 
 nav {
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 40%);
   margin: -4px 0px 0px 0px;
-  padding: 10px;
+  padding: 2%;
   min-width: 270px;
-  display: block;
+  display: flex;
   text-align: center;
   z-index: 2;
+  line-height: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
+/* I want to hover on img and navDefaultText start to work */
 
-.navDefaultText{
-  display: none;
-}
 
 .careerTitle {
   font-size: 3vw;
@@ -139,19 +142,46 @@ nav {
   align-items: flex-end;
 }
 
-.navDefault {
+a.navDefault {
   display: inline-block;
-  flex-direction: row;
-  margin: 1%;
   width: 250px;
   height: 250px;
-  text-align: center;
   filter: grayscale(100%);
-  transition: filter 0.25s ease-in-out;
+  transition: filter 0.40s ease-in-out;
+  padding: 2%;
+}
+
+.navDefaultText{
+  width: 250px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);  
+  font-family: 'Neucha', cursive;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+  transition: all 0.40s ease-in-out 0.15s;
+
+}
+
+.navDefault:hover .navDefaultText{
+  width: 250px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);  
+  font-family: 'Neucha', cursive;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -150px;
+
 }
 
 
-.navDefault:hover {
+.navDefault:hover{
   filter: none;
 }
 
@@ -162,12 +192,12 @@ nav {
 .navSelected {
   display: inline-block;
   flex-direction: row;
-  margin: 1%;
+  margin: 0 1%;
   width: 250px;
   height: 250px;
   text-align: center;
   filter: none;
-  transition: filter 0.25s ease-in-out;
+  transition: filter 0.40s ease-in-out;
 }
 
 
@@ -289,7 +319,7 @@ nav {
     filter: none;
   }
 
-a.navSelected {
+  a.navSelected {
   background-color: #D8F3DC;
   display: inline-block;
   flex-direction: row;
@@ -300,17 +330,21 @@ a.navSelected {
   text-align: center;
   filter: none;
   transition: filter 0.25s ease-in-out;
-}
+  }
 
-.navDefaultText{
-    display: block;
+  .navDefaultText{
+    display: flex;
     font-size: 120%;
     text-align: center;
-    line-height: 6vh;
+    line-height: 8vh;
     width: -webkit-fill-available;
-    height:50px;
-
-}
+    height: 50px;
+    position: relative;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.0);
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
