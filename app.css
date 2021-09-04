@@ -282,6 +282,60 @@ a.navSelected {
   transform: none;
 }
 
+.timeline{
+position:relative ;
+}
+
+.timeline::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 40%;
+  width: 3px;
+  background-color: #333333
+}
+
+li.timeline{
+  margin: 10% 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.timelineContent{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 45%;
+}
+
+.timelineStone {
+  margin-left: -0.5em;
+  width: 20px;
+  height: 20px;
+  background-color: #be9fe1;
+  border-radius: 100%;
+  z-index: 2;
+  border: 3px #333333 solid;
+  position: absolute;
+  left: 40%;
+}
+
+.timelineYear{
+  background-color: #e1ccec;
+  width: 20%;
+  padding: 2% 1%;
+  border-radius: 10px;
+  position: relative;
+  left: 15%;
+  font-size: 130%;
+  text-align: center;
+}
+
 .topic {
   color: #023047;
   font-size: 200%;
@@ -289,6 +343,7 @@ a.navSelected {
   font-family: 'Neucha', cursive;
 }
 
+/* Responsive CSS */
 @media (max-width: 606px) {
   div.aboutMe{
     display: flex;
