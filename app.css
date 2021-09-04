@@ -123,14 +123,18 @@ img.aboutMeRight{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   margin: 3% 0 3% 10%;
   opacity: 0;
+  transform: translateY(50px);
 }
 
 p.aboutMeRight{
+
   opacity: 0;
+  transform: translateY(50px);
 }
 
 p.aboutMeRight-transition, img.aboutMeRight-transition{
   opacity: 1;
+  transform:none;
 }
 
 img.aboutMeLeft{
@@ -138,13 +142,17 @@ img.aboutMeLeft{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
   margin: 3% 10% 3% 0%;
   opacity: 0;
+  transform: translateY(50px);
 }
 
 p.aboutMeLeft{
   opacity: 0;
+  transform: translateY(50px);
 }
 p.aboutMeLeft-transition, img.aboutMeLeft-transition{
   opacity: 1;
+  transform:none;
+
 }
 
 .careerTitle {
@@ -393,17 +401,21 @@ a.navDefault {
     transition: opacity 1.5s ease, transform 1.5s ease;
   }}
   p.aboutMeRight{
-    transition: opacity 1.5s ease-in-out 0.75s;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition-delay: 0.75s;
   }
 
   img.aboutMeRight{
-    transition: opacity 1.5s ease-in-out 0.75s;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    transition-delay: 0.75s;
   }
 
   p.aboutMeLeft{
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+
   }
 
   img.aboutMeLeft{
-    transition: opacity 1.5s ease-in-out ;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+
   }
