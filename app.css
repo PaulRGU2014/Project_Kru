@@ -415,6 +415,29 @@ a.navSelected {
   width: -webkit-fill-available;
   height: 50px;
   }
+  @media (prefers-reduced-motion: no-preference) {
+    .projectPanel {
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }}
+    p.aboutMeRight{
+      transition: opacity 1.5s ease, transform 1.5s ease;
+      transition-delay: 0s;
+    }
+  
+    img.aboutMeRight{
+      transition: opacity 1.5s ease, transform 1.5s ease;
+      transition-delay: 0s;
+    }
+  
+    p.aboutMeLeft{
+      transition: opacity 1.5s ease, transform 1.5s ease;
+  
+    }
+  
+    img.aboutMeLeft{
+      transition: opacity 1.5s ease, transform 1.5s ease;
+  
+    }
 
 }
 
