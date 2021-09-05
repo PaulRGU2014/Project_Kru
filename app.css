@@ -296,7 +296,7 @@ position:relative ;
 }
 
 li.timeline{
-  margin: 10% 0;
+  margin-bottom: 5%;
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -339,7 +339,7 @@ li.timeline{
 .topic {
   color: #023047;
   font-size: 200%;
-  margin: 0 0 1%;
+  margin: 0 0 5% 0;
   font-family: 'Neucha', cursive;
 }
 
