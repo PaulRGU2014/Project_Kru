@@ -133,7 +133,7 @@ img.aboutMeLeft{
   transform: translateY(50px);
 }
 
-p.transition, img.transition, a.transition, div.transition, h3.transition{
+p.transition, img.transition, a.transition, div.transition, h3.transition, h1.transition, nav.transition{
   opacity: 1;
   transform:none;
 }
@@ -186,6 +186,8 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transform: scale(1.2);
 }
 
 a.navDefault {
@@ -334,7 +336,7 @@ li.timeline{
   border-radius: 10px;
   position: relative;
   left: 15%;
-  font-size: 130%;
+  font-size: 100%;
   text-align: center;
   opacity: 0;
   transform: translateX(20px);
@@ -345,6 +347,8 @@ li.timeline{
   font-size: 200%;
   margin: 0 0 5% 0;
   font-family: 'Neucha', cursive;
+  opacity: 0;
+  transform: translateX(-30px);
 }
 
 /* Responsive CSS */
@@ -562,7 +566,7 @@ li.timeline{
 
 /* Animation Section (Main View)*/
 @media (prefers-reduced-motion: no-preference) {
-  .projectPanel, .timelineStone, .timeline {
+  .projectPanel, .timelineStone, .timeline, .topic, nav {
     transition: opacity 1s ease, transform 1s ease;
   }
   p.aboutMeRight, .timelineYear{
