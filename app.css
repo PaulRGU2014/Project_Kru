@@ -64,11 +64,18 @@ body {
   background-color: white;
 }
 
+button{
+  font-family: 'Neucha', cursive;
+  font-size: 100%;
+  background-color: #e1ccec;
+  margin: 1% 0;
+  padding: 2% 3%;
+}
 
 footer {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer>div{
@@ -96,6 +103,29 @@ h2 {
 
 h3 {
   font-size: 150%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+label{
+  margin: 2% 0;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+form>input{
+  width: -webkit-fill-available;
+  height: 9vh;
+  background-color: #e1ccec;
 }
 
 li{
@@ -150,6 +180,14 @@ p.transition, img.transition, a.transition, div.transition, h3.transition, h1.tr
   font-size: 5vw;
   font-family: 'Neucha', cursive;
   font-weight: bolder;
+}
+
+.inputLarge{
+  width: -webkit-fill-available;
+  height: 30vh;
+  background-color: #e1ccec;
+}
+
 }
 
 .languages {
@@ -292,7 +330,7 @@ ul.skill{
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: wrap;
-  justify-content: space-between
+  justify-content: space-around;
 }
 
 li.skill{
