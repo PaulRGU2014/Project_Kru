@@ -67,6 +67,7 @@ body {
 button{
   font-family: 'Neucha', cursive;
   font-size: 100%;
+  border-radius: 10px;
   background-color: #e1ccec;
   margin: 1% 0;
   padding: 2% 3%;
@@ -126,6 +127,7 @@ form>input{
   width: -webkit-fill-available;
   height: 9vh;
   background-color: #e1ccec;
+  border-radius: 10px;
 }
 
 li{
@@ -186,8 +188,6 @@ p.transition, img.transition, a.transition, div.transition, h3.transition, h1.tr
   width: -webkit-fill-available;
   height: 30vh;
   background-color: #e1ccec;
-}
-
 }
 
 .languages {
