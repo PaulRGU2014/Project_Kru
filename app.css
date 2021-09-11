@@ -74,16 +74,28 @@ button{
 }
 
 footer {
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 40%);
+  margin: 20px 0 40px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 15vw;
+  justify-content: center;
 }
+
+footer>a>img {
+  height: 7vw;
+  padding: 0 2vw 2vw 0;
+}
+
 
 footer>div{
   display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  margin: 1% 0;
+  flex-direction: column;
+  align-items: center;
+  background-color: #926ea5;
+  height: 15vw;
+  justify-content: flex-end;
 }
 
 p{
@@ -125,9 +137,12 @@ label{
 
 form>input{
   width: -webkit-fill-available;
-  height: 9vh;
+  height: 7vh;
   background-color: #e1ccec;
+  padding: 1%;
   border-radius: 10px;
+  font-family: 'Neucha', cursive;
+  font-size: 100%;
 }
 
 li{
@@ -141,6 +156,11 @@ hr {
   border: 2px solid black;
 }
 
+::placeholder{
+  font-family: 'Neucha', cursive;
+  font-size: 100%;
+
+}
 
 div.aboutMe{
   display: flex;
@@ -193,12 +213,6 @@ p.transition, img.transition, a.transition, div.transition, h3.transition, h1.tr
 .languages {
   display: block;
   text-align: end;
-}
-
-.logo {
-  height: 50px;
-  border-radius: 20%;
-  padding: 0 0.5%;
 }
 
 .nameTitle {
@@ -308,7 +322,7 @@ a.navSelected {
   display: flex;
   flex-direction: column;
   width: 500px;
-  height: 200px;
+  height: 10vw;
   padding: 4%;
   margin-bottom: 5%;
   font-size: 120%;
@@ -530,6 +544,32 @@ li.timeline {
 
 /* Responsive CSS */
 @media (max-width: 606px) {
+  form>input {
+    width: -webkit-fill-available;
+    height: 7vh;
+    background-color: #e1ccec;
+    padding: 1% 5%;
+    border-radius: 10px;
+    font-family: 'Neucha', cursive;
+    font-size: 80%;
+}
+
+::placeholder{
+  font-family: 'Neucha', cursive;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+  label {
+    margin: 2% 0;
+    width: 100%;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
   div.aboutMe{
     display: flex;
     align-items: center;
