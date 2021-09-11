@@ -52,7 +52,7 @@ a {
 article {
   box-shadow: 0px 0.5vw 1.5vw rgba(0, 0, 0, 0.4);
   margin: 2% 0 2% 0;
-  min-width: 270px;
+  width: -webkit-fill-available;
   display: block;
   font-size: 150%;
   text-align: justify;
@@ -77,10 +77,12 @@ footer {
   box-shadow: 0px 4px 20px rgb(0 0 0 / 40%);
   margin: 10px 0 10px 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items:center;
-  height: 10vw;
+  height:fit-content;
+  width: -webkit-fill-available;
   justify-content: center;
+  padding: 1% 0;
 }
 
 footer>div{
@@ -574,6 +576,7 @@ form>input, div>input{
 p{
 font-size: 80%;
 }
+
   label {
     margin: 2% 0;
     width: 100%;
@@ -620,29 +623,9 @@ font-size: 80%;
     font-family: 'Neucha', cursive;
     font-weight: bolder;
   }
-  .paul {
-    height: 72vw;
-    margin: 0;
-    vertical-align: middle;
-    z-index: -1;
-  }
 
-  .projectPanel{
-    background-color: #e1ccec;
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
-    padding: 6%;
-    width: -webkit-fill-available;
-    height: 100px;
-    font-size: 100%;
-    color: black;
-    text-align: center;
-    justify-content: center;
-    border: none;
-    border-radius: 10px;
-    opacity: 0;
-    transform: scale(1.2);
+  img.logo{
+    height:7vw;
   }
 
   .nameTitle {
@@ -695,6 +678,31 @@ font-size: 80%;
     justify-content: center;
     position: relative;
     top: 0px;
+  }
+
+  .paul {
+    height: 72vw;
+    margin: 0;
+    vertical-align: middle;
+    z-index: -1;
+  }
+
+  .projectPanel{
+    background-color: #e1ccec;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 6%;
+    width: -webkit-fill-available;
+    height: 100px;
+    font-size: 100%;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(1.2);
   }
 
   .skill{
