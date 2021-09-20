@@ -42,27 +42,27 @@
     <!-- <section class="paulSection"> -->
 
     <nav class="transition">
-        <a class="navDefault" data-tab="AboutMe">
-            <img src="pics/menus/AboutMe/AboutMe.jpg" alt="About Me" class="navDefault">
-            <h3 class="navDefaultText">About Me</h3>
+        <a class="navSelected" data-tab="AboutMe" id="menu">
+            <img src="pics/menus/AboutMe/AboutMe.jpg" alt="About Me" class="navSelected">
+            <h3 class="navSelectedText">About Me</h3>
         </a>
-        <a class="navDefault" data-tab="Experiences">
+        <a class="navDefault" data-tab="Experiences" id="menu">
             <img src="pics/menus/Experiences.jpg" alt="Experiences" class="navDefault">
             <h3 class="navDefaultText">Experiences</h3>
         </a>
-        <a class="navDefault" data-tab="Skills">
+        <a class="navDefault" data-tab="Skills" id="menu">
             <img src="pics/menus/Skills.jpg" alt="Skills" class="navDefault">
             <h3 class="navDefaultText">Skills</h3>
         </a>
-        <a href="" class="navDefault" data-tab="Projects">
+        <a class="navDefault" data-tab="Projects" id="menu">
             <img src="pics/menus/Projects.jpg" alt="Projects" class="navDefault">
             <h3 class="navDefaultText">Projects</h3>
         </a>
-        <a href="" class="navDefault" data-tab="Education">
+        <a class="navDefault" data-tab="Education" id="menu">
             <img src="pics/menus/Edu.jpg" alt="Education" class="navDefault">
             <h3 class="navDefaultText">Education</h3>
         </a>
-        <a href="" class="navDefault" data-tab="Contact">
+        <a class="navDefault" data-tab="Contact" id="menu">
             <img src="pics/menus/Contact.jpg" alt="Contact" class="navDefault">
             <h3 class="navDefaultText">Contact</h3>
         </a>
@@ -338,19 +338,25 @@
 
         <h1 class="topic transition" id="transition">Contact</h1>
         <p>Please provide your information and messages to communicate with me</p>
-        <form action="">
-            <div class="inputSingleLine"><label for="">First Name
-                </label><input type="text">
-                <div style="width: 7.5%;"></div>
-                <label for="">Last Name</label><input type="email">
-            </div>
-            <div class="inputSingleLine">
-                <label for="">Email</label><input type="text">
-            </div>
-            <div class="inputMultiLine">
-                <label for="">Message</label><textarea class="inputLarge"></textarea>
-            </div>
-            <button>Submit</button>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xnqlwbzy"
+            method="POST">
+            <fieldset id="fs-frm-inputs">
+                <div class="inputSingleLine"><label for="full-name">Full Name
+                        <input type="text" name="name" id="full-name" required="">
+                    </label>
+                </div>
+                <div class="inputSingleLine">
+                    <label for="email-address">Email<input type="email" name="_replyto" id="email-address"
+                            required=""></label>
+                </div>
+                <div class="inputMultiLine">
+                    <label for="message">Message<textarea class="inputLarge" name="message" id="message"
+                            required=""></textarea>
+                    </label>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <button type="submit" value="submit">Submit</button>
         </form>
     </article>
 
