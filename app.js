@@ -23,7 +23,40 @@
   transition.forEach((section, index) => {
   observerLeft.observe(section);
 
-  })}
+  })};
 
-  slideShow()
+//   Make menu works
+  const menus = document.querySelectorAll("#menu");
+  const article = document.querySelectorAll("article");
+  
+  function tabChange() {
+  for (i = 1; i < article.length; i++) {
+      article[i].hidden = true;
+  }
+  
+  for (let menu of menus) {
+      menu.addEventListener("click", menuActive);
+  }
+  
+  function menuActive() {
+      const menuActive = document.querySelectorAll(".navSelected");
+      const dataTab = this.getAttribute("data-tab");
+      for (let menu of menuActive) {
+          menu.classList.value = "tabName";
+          for (let content of article) {
+              if (content.dataset.tab !== dataTab) {
+                  content.hidden = true;
+              } else {
+                  content.hidden = false;
+              }
+          }
+      }
+      this.classList.value = "navSelected";
+  }};
+
+  tabChange();
+
+  slideShow();
+
+
 
