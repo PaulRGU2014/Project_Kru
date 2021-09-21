@@ -66,11 +66,15 @@ body {
 
 button {
   font-family: 'Neucha', 'Times New Roman', Times, serif;
-  font-size: 100%;
+  font-size: 120%;
   border-radius: 10px;
   background-color: #e1ccec;
   margin: 3% 0;
   padding: 2% 3%;
+}
+
+button:hover {
+  background-color: #D8F3DC;
 }
 
 footer {
@@ -134,6 +138,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  font-size: 120%;
 }
 
 form>label>input, div>label>input {
@@ -251,8 +256,8 @@ p.transition, img.transition, a.transition, div.transition, h3.transition, h1.tr
 }
 
 nav {
-  box-shadow: 0px 4px 20px rgb(0 0 0 / 40%);
-  margin: -4px 0px 0px 0px;
+  box-shadow: 0px 0.5vw 1.5vw rgba(0, 0, 0, 0.4);
+  margin: 2% 0 2% 0;
   padding: 2%;
   min-width: 270px;
   display: flex;
@@ -355,11 +360,11 @@ h3.navSelectedText {
   background-color: #e1ccec;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 70%;
   height: 10vw;
   padding: 4%;
   margin-bottom: 5%;
-  font-size: 120%;
+  font-size: 3vw;
   color: black;
   text-align: center;
   justify-content: center;
@@ -392,19 +397,6 @@ li.skill {
   align-items: center;
   width: 40%;
   text-align: left;
-}
-
-.skillCategory {
-  background-color: #e1ccec;
-  width: 20%;
-  padding: 2% 1%;
-  border-radius: 10px;
-  position: relative;
-  left: 15%;
-  font-size: 100%;
-  text-align: center;
-  opacity: 0;
-  transform: translateX(20px);
 }
 
 div.skillContent {
@@ -445,7 +437,7 @@ div.skillContent>ul>li::before {
   display: flex;
   margin-top: 1%;
   flex-direction: column;
-  font-size: 70%;
+  font-size: 110%;
   position: relative;
   left: 30%;
   opacity: 0;
@@ -472,9 +464,9 @@ div.skillContent>ul>li::before {
   content: "";
   position: absolute;
   height: 3px;
-  margin-top: 2%;
+  margin-top: 1vh;
   left: -5%;
-  width: 10px;
+  width: 1vw;
   background-color: #333333;
   z-index: 0;
 }
@@ -486,7 +478,7 @@ div.skillContent>ul>li::before {
   border-radius: 10px;
   position: relative;
   left: 0%;
-  font-size: 100%;
+  font-size: 150%;
   text-align: center;
   z-index: 1;
   opacity: 0;
@@ -536,6 +528,10 @@ li.timeline {
   transform: translateX(-20px);
 }
 
+div.timelineContent>p {
+  font-size: 1.8vw;
+}
+
 .timelineStone {
   margin-left: -0.5em;
   width: 20px;
@@ -557,7 +553,7 @@ li.timeline {
   border-radius: 10px;
   position: relative;
   left: 15%;
-  font-size: 100%;
+  font-size: 2.5vw;
   text-align: center;
   opacity: 0;
   transform: translateX(20px);
@@ -565,7 +561,7 @@ li.timeline {
 
 .topic {
   color: #023047;
-  font-size: 200%;
+  font-size: 225%;
   margin: 0 0 2.5% 0;
   font-family: 'Neucha', 'Times New Roman', Times, serif;
   opacity: 0;
@@ -807,6 +803,9 @@ li.timeline {
     left: 11%;
     opacity: 0;
     transform: translateY(-20px);
+  }
+  div.timelineContent>p {
+    font-size: 100%;
   }
   .timelineStone {
     margin-left: -0.5em;
