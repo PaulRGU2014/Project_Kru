@@ -9,16 +9,20 @@ class App extends React.Component {
         super(props)
         // we use this to make sure that the React.component get called and we have to do it everytime
 
+        // THIS IS THE ONLY TIME we do direct assignment to this.state
+
         this.state = { lat: null };
+        // We call for a current location here in order not to double fetch
+        window.navigator.geolocation.getCurrentPosition(
+            //  We called setstate!!!
+            position => { this.setState({ lat: position.coords.latitude }); },
+            err => console.log(err)
+        );
     }
 
     // React says we have tp define render!!
     render() {
-        window.navigator.geolocation.getCurrentPosition(
-            (position) => console.log(position),
-            (err) => console.log(err)
-        );
-        return <div>Latitude: </div>
+        return <div>Latitude: {this.state.lat}</div>
     }
 }
 
