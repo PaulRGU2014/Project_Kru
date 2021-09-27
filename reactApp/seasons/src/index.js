@@ -11,18 +11,27 @@ class App extends React.Component {
 
         // THIS IS THE ONLY TIME we do direct assignment to this.state
 
-        this.state = { lat: null };
+        this.state = { lat: null, errorMessage: '' };
         // We call for a current location here in order not to double fetch
         window.navigator.geolocation.getCurrentPosition(
             //  We called setstate!!!
             position => { this.setState({ lat: position.coords.latitude }); },
-            err => console.log(err)
+            err => {
+                this.setState({ errorMessage: err.message })
+            }
         );
     }
 
-    // React says we have tp define render!!
+    // React says we have to define render!!. In this case, we're using conditioning rendering
     render() {
-        return <div>Latitude: {this.state.lat}</div>
+        if (this.state.errorMessage && !this.state.lat) {
+            return <div>Error: {this.state.errorMessage}</div>
+        }
+        if (!this.state.errorMessage && this.state.lat) {
+            return <div>Lattitude: {this.state.lat}</div>
+        }
+
+        return <div>Loading...</div>
     }
 }
 
