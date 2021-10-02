@@ -2,13 +2,7 @@ import React from "react";
 
 // In this case, we want a class based component
 class SearchBar extends React.Component {
-    onInputChange(event) {
-        console.log(event.target.value)
-    }
-
-    onInputClick() {
-        console.log('input was clicked')
-    }
+    state = { term: '' }
 
 
     render() {
@@ -16,7 +10,9 @@ class SearchBar extends React.Component {
             <form className='ui form'>
                 <div className='field'>
                     <label>Image Search</label>
-                    <input type='text' onClick={this.onInputClick} onChange={this.onInputChange} />
+                    <input type='text'
+                        value={this.state.term}
+                        onChange={(e) => this.setState({ term: e.target.value })} />
                     {/* we don't put 'onInputChange()' because 
                     we don't want to call when the component is rendered. It's a callback bunction*/}
                 </div>
