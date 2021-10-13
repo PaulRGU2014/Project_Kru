@@ -20,19 +20,40 @@ const Search = () => {
                     srsearch: term,
                 }
             });
-            setResults(data.query.search)
+            setResults(data.query.search);
         };
 
-        // We don't want to trigger the function until the use type something
-        if (term) {
+        if (term && !results.length) {
             search();
+        } else {
+
+            // // We don't want to trigger the function until the use type something we don't want the app to kwwp searching
+            const timeoutId = setTimeout(() => {
+                if (term) {
+                    search();
+                }
+            }, 500);
+
+            return () => {
+                clearTimeout(timeoutId);
+            };
+
         }
+        // For the first time we render out first component
+
+
 
     }, [term]);
 
     const renderedResults = results.map((result) => {
         return (
             <div key={result.pageid} className="item">
+                <div className="right floated content">
+                    <a
+                        className="ui button"
+                        href={`https://en.wikipedia.org?curid=${result.pageid}`}
+                    >Go</a>
+                </div>
                 <div className="content">
                     <div className="header">
                         {result.title}
