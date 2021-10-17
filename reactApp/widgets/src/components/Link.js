@@ -2,6 +2,10 @@ import React from "react";
 
 const Link = ({ className, href, children }) => {
     const onclick = (event) => {
+        // we want to make ctrl to work in case the user want to open the new tab
+        if (event.metakey || event.ctrlKey) {
+            return;
+        }
         // We don't want to have a full page reload
         event.preventDefault();
         // This is to update the url
