@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Neucha&display=swap);
+
+
+.aboutMeSection{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+
+
+.aboutMeImage{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 3% 0;
+    // // transform: translateY(50px);
+    // // opacity: 0;
+    //     &__sukhothai {
+    //         @extend .aboutMeImage;
+    //         background-image: url(../pics/menus/AboutMe/Sukhothai.jpg);
+    //         background-size: cover
+    //     };
+    //     &__chinaWall {
+    //         @extend .aboutMeImage;
+    //         background-image: url(../pics/menus/AboutMe/ChinaWall.jpg);
+    //         background-size: cover
+    //     };   
+    //     &__hiking {
+    //         @extend .aboutMeImage;
+    //         background-image: url(../pics/menus/AboutMe/Hiking.jpg);
+    //         background-size: cover
+    //     };
+    //     &__coloradoSpring{
+    //         @extend .aboutMeImage;
+    //         background-image: url(../pics/menus/AboutMe/ColoradoSpring.jpg);
+    //         background-size: cover
+            
+    //     }
+    }
+
+
+.aboutMeArticle{
+    // opacity: 0;
+    // transform: translateY(50px);
+    font-family: 'Neucha', 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+    font-size: 150%;
+    text-align: justify;
+    width: calc(90% - 400px);
+    // &:nth-child(odd){}
+    // &:nth-child(even){}
+    &__left {
+        @extend .aboutMeArticle;
+        padding-right: 10%;
+    };
+    &__right {
+        @extend .aboutMeArticle;
+        padding-left: 10%;
+    };
+}

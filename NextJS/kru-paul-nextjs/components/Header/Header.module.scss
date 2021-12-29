@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Neucha&display=swap);
+
+
+/* Paul's code starts here, selectors are sorted by types and alphabets. */
+
+.paul {
+  width: 20vw;
+  margin: 0px -30px 0px 0px;
+  vertical-align: middle;
+  z-index: -1;
+}
+
+.nameTitle {
+  max-width: 1200px;
+  margin: 0vw 0 7vw 6vw;
+}
+
+.fullName {
+  font-size: 5vw;
+  font-family: 'Neucha', 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+.careerTitle {
+  font-size: 3vw;
+  list-style: none;
+}
+
+.nameTop {
+  display: inline-flex;
+  z-index: 0;
+  font-family: 'Neucha', 'Times New Roman', Times, serif;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.languages {
+  display: block;
+  text-align: end;
+}

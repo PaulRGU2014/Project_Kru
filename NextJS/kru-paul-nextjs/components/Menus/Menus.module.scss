@@ -1,0 +1,47 @@
+.panel {
+  box-shadow: 0px 0.5vw 1.5vw rgba(0, 0, 0, 0.4);
+  margin: -0.5% 0 2% 0;
+  padding: 2%;
+  min-width: 270px;
+  display: flex;
+  text-align: center;
+  z-index: 2;
+  border-radius: 1vw;
+  line-height: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.ImageButton {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 1vw;
+  filter: grayscale(100%);
+  transition: filter 0.40s ease-in-out;
+  padding: 2%;
+  box-sizing: content-box;
+}
+
+.ImageButton:hover {
+  filter: none;
+}
+
+.textButton {
+  width: 250px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: 'Neucha', 'Times New Roman', Times, serif;
+  font-size:2.5vh;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+  transition: all 0.40s ease-in-out 0.15s;
+}
+

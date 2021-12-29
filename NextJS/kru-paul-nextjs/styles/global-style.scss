@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Satisfy&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Neucha&display=swap);
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  width: auto;
+  box-sizing: border-box ;
+}
+
+div {
+   line-height: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  text-emphasis: none;
+}
+
+body {
+  margin: 2% 5%;
+  text-align: center;
+  font-family: 'Neucha', 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input, button {
+  border: none;
+}
+
+@mixin panels {
+  box-shadow: 0px 0.5vw 1.5vw rgba(0, 0, 0, 0.4);
+  margin: 0% 0 2% 0;
+  min-width: 270px;
+  display: flex;
+  z-index: 2;
+  border-radius: 1vw;
+  line-height: 0;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+} 
+  
+
+nav {
+  @include panels();
+  padding: 2%;
+  align-items: center;
+  flex-direction: row;
+}
+
+article{
+@include panels();
+ padding: 7%;
+ justify-content: flex-start;
+ align-items: flex-start;
+ flex-direction: column;
+}
+
+footer{
+  @include panels();
+   padding: 1% 7%;
+ justify-content: flex-start;
+ align-items: flex-start;
+ flex-direction: column;
+}
+
+
+.topic {
+  display: block;
+  color: #023047;
+  font-size: 225%;
+  margin: 2.5% 0 5% 0;
+  font-family: 'Neucha', 'Times New Roman', Times, serif;
+  // opacity: 0;
+  // transform: translateX(-30px);
+}
