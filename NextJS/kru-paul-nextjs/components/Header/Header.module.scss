@@ -6,10 +6,12 @@
 /* Paul's code starts here, selectors are sorted by types and alphabets. */
 
 .paul {
-  width: 20vw;
-  margin: 0px -30px 0px 0px;
-  vertical-align: middle;
-  z-index: -1;
+    width: 25vw;
+    position: relative;
+    left: 10%;
+    margin: 0px -30px 0px 0;
+    vertical-align: middle;
+    z-index: -1;
 }
 
 .nameTitle {

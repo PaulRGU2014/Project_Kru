@@ -1,0 +1,45 @@
+.dataInput {
+  height: 5vw;
+  background-color: #e1ccec;
+  padding: 1%;
+  border-radius: 10px;
+  font-family: 'Neucha', 'Times New Roman', Times, serif;
+  font-size: 100%;
+  width: 100%;
+  &Large {
+      @extend .dataInput;
+      height: 30vh;
+      margin-top: 1%;
+  }
+}
+
+// .dataInputLarge{
+//     height: 30vh;
+//     background-color: #e1ccec;
+//     padding: 1%;
+//     border-radius: 10px;
+//     font-family: 'Neucha', 'Times New Roman', Times, serif;
+//     font-size: 100%;
+//     margin-top: 1%;
+//     width: 100%;
+// }
+
+.submitButton{
+   font-family: 'Neucha', 'Times New Roman', Times, serif;
+    font-size: 120%;
+    border-radius: 10px;
+    background-color: #e1ccec;
+    margin: 3% 0;
+    padding: 2% 3%; 
+}
+    
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 2% 0;
+  font-size: 150%;
+  width: 100%;
+}
