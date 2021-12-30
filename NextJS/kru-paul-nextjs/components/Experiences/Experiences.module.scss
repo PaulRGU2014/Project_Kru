@@ -1,17 +1,17 @@
 .wrapper {
-display: block;
-width: 100%;
+display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .timeline {
-  display: flex;
-  border-left: solid;
-  position: relative;
-  left: 50%;
-  padding-bottom: 5%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  width: 3px;
+  background-color: black;
+position: relative;
+    left: 0;
+  padding-bottom: 15%;
 }
 
 
@@ -24,8 +24,8 @@ width: 100%;
   max-width: 300px;
   height: auto;
   padding: 2% 1%;
-  position: relative;
-  left: 8%;
+position: absolute;
+    left: 55%;
   font-size: 2.5vw;
 
   
@@ -45,8 +45,8 @@ div.timelineContent>p {
   border-radius: 100%;
   z-index: 2;
   border: 3px #333333 solid;
-  position: absolute;
-  left: -3px;
+position: absolute;
+    left: calc(50% - 1.5px);
 //   opacity: 0;
 //   transform: scale(0.8);
 }
@@ -60,7 +60,7 @@ div.timelineContent>p {
   padding: 2% 1%;
   border-radius: 10px;
   position: absolute;
-  right: 108%;
+  right: 55%;
   font-size: 2.5vw;
   flex-direction: row;
   justify-content: center;
