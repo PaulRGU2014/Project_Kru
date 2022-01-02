@@ -8,7 +8,6 @@ import Education from "../components/Education/Education"
 
 function HomePage() {
 
-    const [selected, setSelected] = useState(false);
 
     return (
         <div>
