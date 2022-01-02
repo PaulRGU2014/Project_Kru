@@ -30,15 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/about.js"
     ],
-    "/experiences": [
+    "/projects": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/experiences.js"
-    ],
-    "/skills": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/skills.js"
+      "static/chunks/pages/projects.js"
     ]
   },
   "ampFirstPages": []
