@@ -16,7 +16,7 @@ display: flex;
   background-color: black;
 position: relative;
     left: 0;
-  padding-bottom: 15%;
+  padding-bottom: 20%;
 }
 
 
@@ -60,7 +60,7 @@ position: absolute;
   display: flex;
   background-color: #e1ccec;
   width: fit-content;
-  max-width: 250px;
+  min-width: 150px;
   height: auto;
   padding: 2% 1%;
   border-radius: 10px;
