@@ -9,6 +9,7 @@ export default function Header() {
         <div>
             <div className={styles.languages}>
                 <a href="">EN</a>
+                <p>&nbsp;</p>
                 <a href="">TH</a>
             </div>
 

@@ -39,6 +39,6 @@
 }
 
 .languages {
-  display: block;
-  text-align: end;
+  display: flex;
+  justify-content: flex-end;
 }
