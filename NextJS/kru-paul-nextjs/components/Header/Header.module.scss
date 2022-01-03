@@ -6,15 +6,13 @@
 /* Paul's code starts here, selectors are sorted by types and alphabets. */
 
 .paul {
-    width: 25vw;
-    position: relative;
-    left: 10%;
     margin: 0px -30px 0px 0;
     vertical-align: middle;
     z-index: -1;
 }
 
 .nameTitle {
+  width: 200%;
   max-width: 1200px;
   margin: 0vw 0 7vw 6vw;
 }
@@ -31,7 +29,8 @@
 }
 
 .nameTop {
-  display: inline-flex;
+  margin:0;
+  display: flex;
   z-index: 0;
   font-family: 'Neucha', 'Times New Roman', Times, serif;
   text-align: center;

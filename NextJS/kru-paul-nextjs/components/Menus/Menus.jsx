@@ -13,12 +13,13 @@ export default function Menus() {
 
     return (
         <nav className={styles.panel}>
-            <div> <Link href='/about'>
-                <a className={styles.ImageButton} data-tab="AboutMe" id="menu">
-                    <Image src={AboutMeImage} alt="About Me" className={styles.ImageButton} />
-                    <h3 className={styles.textButton}>About Me</h3>
-                </a>
-            </Link>
+            <div>
+                <Link href='/about'>
+                    <a className={styles.ImageButton} data-tab="AboutMe" id="menu">
+                        <Image src={AboutMeImage} alt="About Me" className={styles.ImageButton} />
+                        <h3 className={styles.textButton}>About Me</h3>
+                    </a>
+                </Link>
                 <Link href='/experiences'>
                     <a className={styles.ImageButton} data-tab="Experiences" id="menu">
                         <Image src={ExperiencesImage} alt="Experiences" className={styles.ImageButton} />
