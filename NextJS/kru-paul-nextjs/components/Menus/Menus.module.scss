@@ -34,7 +34,7 @@
 }
 
 
-.ImageButton:hover {
+.ImageLink:hover {
   filter: none;
 }
 
@@ -58,13 +58,23 @@
   display: none;
 }
 
-a.ImageButton {
-  display: flex;
-    background-color: #D8F3DC;
-    margin: 2% 1%;
-    padding: 3%;
-    width: -webkit-fill-available;
+.ImageLink{
+  height: 50px;
+  margin: 1%;
+}
+
+.textButton{
+    font-size: 150%;
     height: 50px;
+    background-color: #D8F3DC;
+    font-family: 'Neucha', 'Times New Roman', Times, serif;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    transition: none
 }
 
 }
