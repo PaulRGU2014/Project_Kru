@@ -20,16 +20,19 @@
   opacity: 1;
 }
 
-.ImageButton {
+
+.ImageLink {
   display: inline-block;
   width: 250px;
   height: 250px;
   border-radius: 1vw;
   filter: grayscale(100%);
   transition: filter 0.40s ease-in-out;
-  padding: 2%;
+  margin: 2%;
   box-sizing: content-box;
+  overflow: hidden;
 }
+
 
 .ImageButton:hover {
   filter: none;
@@ -50,3 +53,18 @@
   transition: all 0.40s ease-in-out 0.15s;
 }
 
+@media (max-width:608px){
+.ImageButton {
+  display: none;
+}
+
+a.ImageButton {
+  display: flex;
+    background-color: #D8F3DC;
+    margin: 2% 1%;
+    padding: 3%;
+    width: -webkit-fill-available;
+    height: 50px;
+}
+
+}
