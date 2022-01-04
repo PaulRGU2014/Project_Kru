@@ -37,7 +37,6 @@ export default function Header() {
                 <div className={styles.aboutMeImage}>
                     <Image
                         src={Hiking}
-                        layout="responsive"
                     />
                 </div>
 

@@ -111,3 +111,10 @@ footer{
   // opacity: 0;
   // transform: translateX(-30px);
 }
+
+@media (max-width:950px) {
+  .topic{
+    font-size: 5vw;
+    margin: 5% 0;
+  }
+}

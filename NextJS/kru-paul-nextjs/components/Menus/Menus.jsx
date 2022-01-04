@@ -20,7 +20,9 @@ export default function Menus() {
                             <Image
                                 src={AboutMeImage}
                                 alt="About Me"
-                                id="menu" />
+                                id="menu"
+                                layout="responsive"
+                            />
                         </div>
                         <h3 className={styles.textButton}>About Me</h3>
                     </a>
@@ -31,7 +33,8 @@ export default function Menus() {
                             <Image
                                 src={ExperiencesImage}
                                 alt="Experiences"
-                                id="menu" />
+                                id="menu"
+                                layout="responsive" />
                         </div>
                         <h3 className={styles.textButton}>Experiences</h3>
                     </a>
@@ -39,7 +42,7 @@ export default function Menus() {
                 <Link href='/skills'>
                     <a className={styles.ImageLink} data-tab="Skills">
                         <div className={styles.ImageButton}>
-                            <Image src={SkillsImage} alt="Skills" id="menu" />
+                            <Image src={SkillsImage} alt="Skills" id="menu" layout="responsive" />
                         </div>
                         <h3 className={styles.textButton}>Skills</h3>
                     </a>
@@ -49,7 +52,7 @@ export default function Menus() {
                 <Link href='/projects'>
                     <a className={styles.ImageLink} data-tab="Projects">
                         <div className={styles.ImageButton}>
-                            <Image src={ProjectsImage} alt="Projects" id="menu" />
+                            <Image src={ProjectsImage} alt="Projects" id="menu" layout="responsive" />
                         </div>
                         <h3 className={styles.textButton}>Projects</h3>
                     </a>
@@ -57,7 +60,7 @@ export default function Menus() {
                 <Link href='/education'>
                     <a className={styles.ImageLink} data-tab="Education">
                         <div className={styles.ImageButton}>
-                            <Image src={EducationImage} alt="Education" id="menu" />
+                            <Image src={EducationImage} alt="Education" id="menu" layout="responsive" />
                         </div>
                         <h3 className={styles.textButton}>Education</h3>
                     </a>
@@ -65,7 +68,7 @@ export default function Menus() {
                 <Link href='/contact'>
                     <a className={styles.ImageLink} data-tab="Contact">
                         <div className={styles.ImageButton}>
-                            <Image src={ContactImage} alt="Contact" className={styles.ImageButton} id="menu" />
+                            <Image src={ContactImage} alt="Contact" className={styles.ImageButton} id="menu" layout="responsive" />
                         </div>
                         <h3 className={styles.textButton}>Contact</h3>
                     </a>
