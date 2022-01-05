@@ -74,8 +74,8 @@ export default function Header() {
                         documentaries. I love taking every opportunity to travel
                         and explore new places and cultures. If you have any questions or want to connect please feel free to reach
                         out
-                        <Link>
-                        <a href="/contact"> here</a>.
+                        <Link href='/contact'>
+                        <a> here</a>.
                         </Link>
                     </p>
                 </div>
