@@ -20,7 +20,7 @@ export default function Projects() {
                     <a className={styles.projectPanel} id="transition">Udemy Coursework Yelpcamp</a>
                 </Link>
                 <Link href="">
-                    <a className={styles.projectPanel} id="transition">React Application</a>
+                    <a className={styles.projectPanel} id="transition">NextJS and React Applications</a>
                 </Link>
                 <Link href="https://github.com/PaulRGU2014/Project_Kru">
                     <a className={styles.projectPanel} id="transition">
