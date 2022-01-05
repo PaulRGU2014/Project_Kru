@@ -14,33 +14,40 @@ export default function Footer() {
             <div className={styles.logosArea}>
                 <Link href="https://www.linkedin.com/in/paulrgu2014/">
                     <a className={styles.logo}>
-                        <Image
-                            src={linkedIn}
-                            alt=""
-                        // layout="responsive"
-                        />
-
+                        <div>
+                            <Image
+                                src={linkedIn}
+                                alt=""
+                            // layout="responsive"
+                            />
+                        </div>
                     </a>
                 </Link>
                 <Link href="https://www.facebook.com/PaulChemistryTH/">
                     <a className={styles.logo}>
-                        <Image
-                            src={facebookLogo}
-                            alt="" />
+                        <div>
+                            <Image
+                                src={facebookLogo}
+                                alt="" />
+                        </div>
                     </a>
                 </Link>
                 <Link href="https://www.youtube.com/c/PaulsChemistryThailand">
                     <a className={styles.logo}>
-                        <Image
-                            src={youTubeLogo}
-                            alt="" />
+                        <div>
+                            <Image
+                                src={youTubeLogo}
+                                alt="" />
+                        </div>
                     </a>
                 </Link>
                 <Link href="https://www.instagram.com/paulchemmania/">
                     <a className={styles.logo}>
-                        <Image
-                            src={instaLogo}
-                            alt="" />
+                        <div>
+                            <Image
+                                src={instaLogo}
+                                alt="" />
+                        </div>
                     </a>
                 </Link>
             </div>

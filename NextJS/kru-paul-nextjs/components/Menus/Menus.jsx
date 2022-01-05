@@ -13,7 +13,7 @@ export default function Menus() {
 
     return (
         <nav className={styles.panel}>
-            <div>
+            <div className={styles.menusWrapper}>
                 <Link href='/about'>
                     <a className={styles.ImageLink} data-tab="AboutMe" >
                         <div className={styles.ImageButton}>
@@ -48,7 +48,7 @@ export default function Menus() {
                     </a>
                 </Link>
             </div>
-            <div>
+            <div className={styles.menusWrapper}>
                 <Link href='/projects'>
                     <a className={styles.ImageLink} data-tab="Projects">
                         <div className={styles.ImageButton}>

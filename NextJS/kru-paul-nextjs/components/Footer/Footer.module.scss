@@ -4,7 +4,8 @@
 
 
 .logo {
-  height: 48px;
+  display: flex;
+  width: 48px;
   // padding: 1vw;
   margin: 1.5%;
 }
@@ -15,4 +16,11 @@
   height: auto;
   flex-direction: row;
   justify-content: center;
+}
+
+@media (max-width:950px) {
+  .logo {
+    width: 10vw;
+    min-width: 30px;
+  }
 }
