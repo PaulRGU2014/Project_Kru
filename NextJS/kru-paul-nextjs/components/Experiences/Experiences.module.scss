@@ -4,7 +4,7 @@
 
 
 .wrapper {
-display: flex;
+  display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
@@ -14,8 +14,8 @@ display: flex;
 .timeline {
   width: 3px;
   background-color: black;
-position: relative;
-    left: 0;
+  position: relative;
+  left: 0;
   padding-bottom: 20%;
 }
 
@@ -23,15 +23,15 @@ position: relative;
 .timelineContent {
   display: block;
   text-align: left;
-  line-height: 1em;
+  line-height: 3vw;
   background-color: transparent;
   width: fit-content;
-  max-width: 300px;
+  max-width: 30%;
   height: auto;
   padding: 2% 1%;
-position: absolute;
-    left: 55%;
-  font-size: 2.5vw;
+  position: absolute;
+  left: 55%;
+  font-size: 150%;
 
   
 //   opacity: 0;
@@ -39,7 +39,7 @@ position: absolute;
 }
 
 div.timelineContent>p {
-  font-size: 1.8vw;
+  line-height: normal;
 }
 
 .timelineStone {
@@ -50,7 +50,7 @@ div.timelineContent>p {
   border-radius: 100%;
   z-index: 2;
   border: 3px #333333 solid;
-position: absolute;
+  position: absolute;
     left: calc(50% - 1.5px);
 //   opacity: 0;
 //   transform: scale(0.8);
@@ -59,16 +59,30 @@ position: absolute;
 .timelineYear {
   display: flex;
   background-color: #e1ccec;
+  max-width: 30%;
   width: fit-content;
-  min-width: 150px;
   height: auto;
   padding: 2% 1%;
   border-radius: 10px;
   position: absolute;
   right: 55%;
-  font-size: 2.5vw;
+  font-size: 200%;
   flex-direction: row;
   justify-content: center;
 //   opacity: 0;
 //   transform: translateX(20px);
+}
+
+@media (max-width:750px){
+  .timeline {
+    padding-bottom: 30%;
+  }
+
+  .timelineContent {
+    font-size: 3.5vw;
+  }
+  .timelineYear {
+  font-size: 3.5vw;
+  }
+
 }
