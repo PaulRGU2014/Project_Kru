@@ -84,3 +84,9 @@ div.timelineContent>p {
   }
 
 }
+
+@media (max-width:400px){
+  .timeline {
+    padding-bottom: 40%;
+  }
+}
