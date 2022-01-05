@@ -13,7 +13,7 @@ export default function Projects() {
                 <Link href="https://codepen.io/paul-t-thanataweenont/pen/YzVpOZB">
                     <a className={styles.projectPanel}
                         id="transition">
-                        Training Project Tabs and Data web development
+                        <h3>Training Project Tabs and Data web development</h3>
                     </a>
                 </Link>
                 <Link href="">
@@ -23,13 +23,15 @@ export default function Projects() {
                     <a className={styles.projectPanel} id="transition">React Application</a>
                 </Link>
                 <Link href="https://github.com/PaulRGU2014/Project_Kru">
-                    <a className={styles.projectPanel} id="transition"
-                    >Krupaul.com Coding Repository on Github
+                    <a className={styles.projectPanel} id="transition">
+                        Krupaul.com Coding Repository on Github
                     </a>
                 </Link>
                 <Link href="">
-                    <a className={styles.projectPanel} id="transition">Masters degree dissertation
-                        SAGD Technique for Heavy Oil Extraction</a>
+                    <a className={styles.projectPanel} id="transition">
+                        <h3>Masters degree dissertation
+                            SAGD Technique for Heavy Oil Extraction</h3>
+                    </a>
                 </Link>
 
             </div>
