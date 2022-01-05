@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import Head from 'next/head'
-import PaulChemLogo from '../components/pics/logo/Logo_small.png'
 
 import Header from "../components/Header/Header"
 import Menus from "../components/Menus/Menus"
@@ -19,7 +18,7 @@ function HomePage() {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet" />
-                <link rel="icon" href="../components/pics/logo/Logo.ico" />
+                <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
             </Head>
         </div >
     )
