@@ -75,7 +75,7 @@ export default function Header() {
                         explore new places and cultures. If you have any questions or want to connect please feel free to
                         reach
                         out
-                        <a href="http://"> here</a>.
+                        <a href="/about"> here</a>.
                     </p>
                 </div>
 
