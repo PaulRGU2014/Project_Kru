@@ -8,11 +8,16 @@ import SkillsImage from '../pics/menus/Skills.jpg'
 import ProjectsImage from '../pics/menus/Projects.jpg'
 import EducationImage from '../pics/menus/Edu.jpg'
 import ContactImage from '../pics/menus/Contact.jpg'
+import Hamburger from "./Hamburger/Hamburger";
+
 
 export default function Menus() {
 
     return (
         <nav className={styles.panel}>
+            <div>
+                <Hamburger />
+            </div>
             <div className={styles.menusWrapper}>
                 <Link href='/about'>
                     <a className={styles.ImageLink} data-tab="AboutMe" >
