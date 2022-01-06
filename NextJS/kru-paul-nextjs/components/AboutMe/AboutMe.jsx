@@ -72,11 +72,15 @@ export default function Header() {
                 <div className={styles.aboutMeArticle__left}>
                     <p> I enjoy hiking, exploring nature and watching
                         documentaries. I love taking every opportunity to travel
-                        and
-                        explore new places and cultures. If you have any questions or want to connect please feel free to
-                        reach
+                        and explore new places and cultures. If you have any questions or want to connect please feel free to reach
                         out
+<<<<<<< HEAD
                         <a href="/contact"> here</a>.
+=======
+                        <Link href='/contact'>
+                        <a> here</a>.
+                        </Link>
+>>>>>>> 16e6b026d9a36b328e5464a50aac53f40cb722c0
                     </p>
                 </div>
 
