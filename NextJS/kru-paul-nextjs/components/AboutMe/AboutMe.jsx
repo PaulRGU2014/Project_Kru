@@ -5,6 +5,7 @@ import Hiking from '../pics/menus/AboutMe/Hiking.jpg'
 import ColoradoSpring from '../pics/menus/AboutMe/ColoradoSpring.jpg'
 import ChinaWall from '../pics/menus/AboutMe/ChinaWall.jpg'
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
 
@@ -75,7 +76,7 @@ export default function Header() {
                         explore new places and cultures. If you have any questions or want to connect please feel free to
                         reach
                         out
-                        <a href="http://"> here</a>.
+                        <a href="/contact"> here</a>.
                     </p>
                 </div>
 
