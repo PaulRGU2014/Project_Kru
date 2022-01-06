@@ -73,14 +73,8 @@ export default function Header() {
                     <p> I enjoy hiking, exploring nature and watching
                         documentaries. I love taking every opportunity to travel
                         and explore new places and cultures. If you have any questions or want to connect please feel free to reach
-                        out
-<<<<<<< HEAD
-                        <a href="/contact"> here</a>.
-=======
-                        <Link href='/contact'>
-                        <a> here</a>.
-                        </Link>
->>>>>>> 16e6b026d9a36b328e5464a50aac53f40cb722c0
+                        out <a href="/contact"> here</a>.
+
                     </p>
                 </div>
 
